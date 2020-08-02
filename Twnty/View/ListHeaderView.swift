@@ -21,7 +21,7 @@ struct ListHeaderView: View {
                 .padding(.leading, 15)
             
             Spacer()
-            Text("Conf")
+            Text("Confirmed")
                 .fontWeight(.bold)
                 .font(.subheadline)
                 .frame(height: 40)
