@@ -18,7 +18,7 @@ struct RecentView: View {
             
             
             VStack{
-             
+                TotalDataView(totalData: covidFetch.totalData)
                 ListHeaderView()
                 
                 List{
@@ -29,7 +29,6 @@ struct RecentView: View {
                         CountryDataRowView(countryData: countryData)
                     }
                 }
-                
             }//End of VStack
         }// End of Navigation Stack
     }
