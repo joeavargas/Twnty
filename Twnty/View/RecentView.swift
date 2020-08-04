@@ -12,12 +12,18 @@ struct RecentView: View {
     
     @ObservedObject var covidFetch = NetworkRequest()
     @State var searchText = ""
+    @State var isSearchVisible = false
     
     var body: some View {
         NavigationView{
             
             
             VStack{
+                
+                if isSearchVisible{
+                    SearchView(searchText: $searchText)
+                }
+                
                 TotalDataView(totalData: covidFetch.totalData)
                 ListHeaderView()
                 
@@ -30,6 +36,19 @@ struct RecentView: View {
                     }
                 }
             }//End of VStack
+                .navigationBarTitle("Recent Data", displayMode: .inline)
+                .navigationBarItems(trailing:
+                    
+                    Button(action: {
+                        self.isSearchVisible.toggle()
+                        
+                        if !self.isSearchVisible{
+                            self.searchText = ""
+                        }
+                    }, label: {
+                        Image(systemName: "magnifyingglass")
+                    })
+            )
         }// End of Navigation Stack
     }
 }
