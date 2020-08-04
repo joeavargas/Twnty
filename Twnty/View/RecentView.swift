@@ -17,9 +17,7 @@ struct RecentView: View {
     var body: some View {
         NavigationView{
             
-            
             VStack{
-                
                 if isSearchVisible{
                     SearchView(searchText: $searchText)
                 }
@@ -32,7 +30,10 @@ struct RecentView: View {
                         self.searchText.isEmpty ? true : $0.country.lowercased().contains(self.searchText.lowercased())
                     }, id: \.country){ countryData in
                         
-                        CountryDataRowView(countryData: countryData)
+                        NavigationLink(destination: CountryDetailView(countryData: countryData)){
+                            CountryDataRowView(countryData: countryData)
+                            
+                        }
                     }
                 }
             }//End of VStack
