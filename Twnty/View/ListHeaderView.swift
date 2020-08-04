@@ -10,7 +10,6 @@ import SwiftUI
 
 struct ListHeaderView: View {
     
-    
     var body: some View {
         
         HStack{
@@ -41,7 +40,7 @@ struct ListHeaderView: View {
                 .frame(height: 40)
                 .padding(.trailing, 15)
         }
-        .background(Color(.gray))
+        .background(Color("cardBackgroundGray"))
     }
 }
 
