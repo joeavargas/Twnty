@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		32CB53B5B089C47D4BDC1656 /* Pods_Twnty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564226C5F629888E68BE4986 /* Pods_Twnty.framework */; };
+		E34E6C2C24D9FAA6000B0618 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34E6C2B24D9FAA6000B0618 /* MapView.swift */; };
+		E34E6C2E24D9FF3F000B0618 /* MapContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34E6C2D24D9FF3F000B0618 /* MapContainerView.swift */; };
 		E35EB88D24D68A1700721483 /* RecentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35EB88C24D68A1700721483 /* RecentView.swift */; };
 		E35EB88F24D68D4800721483 /* ListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35EB88E24D68D4800721483 /* ListHeaderView.swift */; };
 		E35EB89124D68F6B00721483 /* CountryDataRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35EB89024D68F6B00721483 /* CountryDataRowView.swift */; };
@@ -31,6 +33,8 @@
 /* Begin PBXFileReference section */
 		18346D666EC52524239B28BB /* Pods-Twnty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twnty.debug.xcconfig"; path = "Target Support Files/Pods-Twnty/Pods-Twnty.debug.xcconfig"; sourceTree = "<group>"; };
 		564226C5F629888E68BE4986 /* Pods_Twnty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twnty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E34E6C2B24D9FAA6000B0618 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		E34E6C2D24D9FF3F000B0618 /* MapContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContainerView.swift; sourceTree = "<group>"; };
 		E35EB88C24D68A1700721483 /* RecentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentView.swift; sourceTree = "<group>"; };
 		E35EB88E24D68D4800721483 /* ListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeaderView.swift; sourceTree = "<group>"; };
 		E35EB89024D68F6B00721483 /* CountryDataRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDataRowView.swift; sourceTree = "<group>"; };
@@ -83,6 +87,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E34E6C2A24D9FA86000B0618 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				E34E6C2B24D9FAA6000B0618 /* MapView.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
 		E35EB89424D691B300721483 /* Global */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +122,7 @@
 		E36E5D9924D55A3700006EF4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E34E6C2A24D9FA86000B0618 /* MapView */,
 				E3BD909D24D4298700A7CE67 /* ContentView.swift */,
 				E35EB88C24D68A1700721483 /* RecentView.swift */,
 				E3922C0924D9359800264F55 /* CountryDetailView.swift */,
@@ -119,6 +132,7 @@
 				E3A4E1BA24D7E07400011939 /* TotalDataView.swift */,
 				E37A5A4524D8EA3A000F2CDE /* SearchView.swift */,
 				E3922C0724D9342200264F55 /* CountryDetailRow.swift */,
+				E34E6C2D24D9FF3F000B0618 /* MapContainerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -291,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3922C0824D9342200264F55 /* CountryDetailRow.swift in Sources */,
+				E34E6C2C24D9FAA6000B0618 /* MapView.swift in Sources */,
 				E35EB89324D690F400721483 /* Integers.swift in Sources */,
 				E36E5D9524D54FD200006EF4 /* NetworkRequest.swift in Sources */,
 				E3BD909724D4298700A7CE67 /* AppDelegate.swift in Sources */,
@@ -300,6 +315,7 @@
 				E35EB88D24D68A1700721483 /* RecentView.swift in Sources */,
 				E3BD909924D4298700A7CE67 /* SceneDelegate.swift in Sources */,
 				E3922C0A24D9359800264F55 /* CountryDetailView.swift in Sources */,
+				E34E6C2E24D9FF3F000B0618 /* MapContainerView.swift in Sources */,
 				E37A5A4624D8EA3A000F2CDE /* SearchView.swift in Sources */,
 				E35EB88F24D68D4800721483 /* ListHeaderView.swift in Sources */,
 				E3A4E1B924D7DBE200011939 /* TotalDataCard.swift in Sources */,

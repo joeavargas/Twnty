@@ -22,7 +22,6 @@ struct CountryDetailView: View {
                 CountryDetailRow(number: countryData.recovered.formatNumber(), name: "Recovered", color: .yellow)
                 CountryDetailRow(number: String(format: "%.2f", countryData.recoveredRate), name: "Recovered Rate %", color: .green)
                 
-                
             }//End of inner VStack
                 .background(Color("cardBackgroundGray"))
                 .cornerRadius(8)

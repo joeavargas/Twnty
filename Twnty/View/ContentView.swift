@@ -9,9 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    
-    
+       
     var body: some View {
         TabView{
             //Recent tab item
@@ -21,6 +19,11 @@ struct ContentView: View {
             }.tag(0)
             
             //Map tab item
+            MapContainerView()
+                .edgesIgnoringSafeArea(.vertical)
+                .tabItem{
+                    Tab(imageName: "map", text: "Map")
+            }.tag(1)
         }
     }
 }
@@ -34,5 +37,11 @@ private struct Tab: View{
             Image(systemName: imageName)
             Text(text)
         }
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
     }
 }
