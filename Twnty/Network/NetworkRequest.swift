@@ -79,7 +79,3 @@ class NetworkRequest: ObservableObject{
         }
     }
 }
-
-//https://covid-19-data.p.rapidapi.com/totals?format=undefined
-//my "x-rapidapi-key": "d2325d3ab5msh3371dc64500bd3ep1b9c4cjsn6aa714871959"
-// alt api: d172e810e7msh47584ae043c146dp12d8eejsnb0b3c42c4a59
